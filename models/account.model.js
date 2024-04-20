@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const generate = require("../helpers/generate")
 
-const userSchema = new mongoose.Schema(
+const accountSchema = new mongoose.Schema(
     {
     ten_doanh_nghiep: String,
     email: String,
@@ -19,6 +19,6 @@ const userSchema = new mongoose.Schema(
     { timestamps: true }
 );
 
-const User = mongoose.model("User", userSchema, "users");
+const Account = mongoose.model("Account", accountSchema, "accounts");
 
-module.exports = User;
+module.exports = Account;
